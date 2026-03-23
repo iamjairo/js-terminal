@@ -1,6 +1,6 @@
 SPK_NAME = terminal
-SPK_VERS = 3.0
-SPK_REV = 4
+SPK_VERS = 1.0
+SPK_REV = 1
 SPK_ICON = src/$(SPK_NAME).png
 
 DEPENDS =
