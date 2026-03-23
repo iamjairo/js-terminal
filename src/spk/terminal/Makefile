@@ -70,7 +70,6 @@ terminal_strip_target:
 	chmod a+x $(STAGING_DIR)/bin/ttyd
 	install -m 755 -d $(STAGING_DIR)/etc/
 	install -m 644 src/etc/alias.terminal.conf $(STAGING_DIR)/etc/alias.terminal.conf
-	install -m 644 src/etc/terminal_tmux.conf $(STAGING_DIR)/etc/terminal_tmux.conf
 	install -m 644 src/etc/terminal_ttyd.conf $(STAGING_DIR)/etc/terminal_ttyd.conf
 
 	install -m 755 -d $(STAGING_DIR)/app/help
