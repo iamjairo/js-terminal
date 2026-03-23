@@ -1,8 +1,7 @@
 #
-# Copyright (C) 2022 Ing <https://github.com/wjz304>
+# Copyright (C) 2026 iamjairo
 #
 # This is free software, licensed under the MIT License.
-# See /LICENSE for more information.
 #
 
 name: build
@@ -15,22 +14,19 @@ on:
         required: false
         type: string
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: [x64-7.0, x64-7.2, aarch64-7.0, aarch64-7.2]
+        target: [x64-7.3]
 
     steps:
     - name: Checkout
       uses: actions/checkout@main
-
-    - name: Init Env
-      run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        sudo timedatectl set-timezone "Asia/Shanghai"
 
     - name: Checkout SynoCommunity Source and Docker Image
       run: |
