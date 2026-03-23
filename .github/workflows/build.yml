@@ -30,7 +30,7 @@ jobs:
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        sudo timedatectl set-timezone "Europ/Amsterdam"
+        sudo timedatectl set-timezone "Europe/Amsterdam"
 
     - name: Checkout SynoCommunity Source and Docker Image
       run: |
