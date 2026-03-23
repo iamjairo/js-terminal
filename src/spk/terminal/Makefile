@@ -1,4 +1,4 @@
-SPK_NAME = terminal
+SPK_NAME = js-terminal
 SPK_VERS = 1.0
 SPK_REV = 1
 SPK_ICON = src/$(SPK_NAME).png
@@ -20,7 +20,7 @@ SPK_DEPENDS =
 
 DSM_UI_DIR = app
 DSM_UI_CONFIG = src/app/config
-DSM_APP_NAME = IamJairo.Terminal.AppInstance
+DSM_APP_NAME = IamJairo.JsTerminal.AppInstance
 
 WIZARDS_DIR = src/wizard
 

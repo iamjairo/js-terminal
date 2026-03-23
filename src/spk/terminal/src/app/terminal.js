@@ -1,17 +1,17 @@
 // Namespace definition
-Ext.ns("IamJairo.Terminal");
+Ext.ns("IamJairo.JsTerminal");
 
 // Application definition
-Ext.define("IamJairo.Terminal.AppInstance", {
+Ext.define("IamJairo.JsTerminal.AppInstance", {
     extend: "SYNO.SDS.AppInstance",
-    appWindowName: "IamJairo.Terminal.AppWindow",
+    appWindowName: "IamJairo.JsTerminal.AppWindow",
     defaultWinSize: { width: 1160, height: 620 },
     constructor: function () {
         this.callParent(arguments);
     },
 });
 
-Ext.define("IamJairo.Terminal.AppWindow", {
+Ext.define("IamJairo.JsTerminal.AppWindow", {
     extend: "SYNO.SDS.AppWindow",
     layout: 'fit',
     width: '100%',
@@ -40,10 +40,10 @@ Ext.define("IamJairo.Terminal.AppWindow", {
         return Ext.apply(i, e), i;
     },
     onDestroy: function (e) {
-        IamJairo.Terminal.AppWindow.superclass.onDestroy.call(this);
+        IamJairo.JsTerminal.AppWindow.superclass.onDestroy.call(this);
     },
     onOpen: function (a) {
-        IamJairo.Terminal.AppWindow.superclass.onOpen.call(
+        IamJairo.JsTerminal.AppWindow.superclass.onOpen.call(
             this,
             a
         );
