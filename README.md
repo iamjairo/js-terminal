@@ -1,5 +1,3 @@
-# syno-terminal
-
 **JS - Terminal** — a web-based terminal for Synology NAS, powered by [ttyd](https://github.com/tsl0922/ttyd) and rendered with xterm.js (WebGL).
 
 Opens directly as an app window inside DSM, or via browser at `http(s)://<ip>:<port>/terminal/`
