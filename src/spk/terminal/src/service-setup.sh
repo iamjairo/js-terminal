@@ -62,7 +62,7 @@ service_prestart() {
 	fi
 
 	TTYD_ARGS="$(cat ${SYNOPKG_PKGDEST}/etc/terminal_ttyd.conf 2>/dev/null | xargs)"
-	nohup ${SYNOPKG_PKGDEST}/bin/ttyd ${TTYD_ARGS} login >${LOG_FILE} 2>&1 &
+	nohup ${SYNOPKG_PKGDEST}/bin/ttyd ${TTYD_ARGS} /bin/bash >${LOG_FILE} 2>&1 &
 	echo $! >"${PID_FILE}"
 }
 
